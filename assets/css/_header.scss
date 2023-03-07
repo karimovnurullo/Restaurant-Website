@@ -1,0 +1,154 @@
+// ::-webkit-scrollbar{
+//     width: 5px;
+// }
+// ::-webkit-scrollbar-thumb{
+//     background-color: green;
+// }
+
+header{
+    // max-width: 1366px;
+    width: 100%;
+    height: 100px;
+    // margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // transform: translateX(-50%);
+    z-index: 99999;
+    transition: all 0.5s;
+    
+
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        
+        a{
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+
+        }
+    }
+    #myBar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: rgba(0, 128, 15, 0.633);
+        z-index: -10;
+        color: red;
+    }
+    .social{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .menu{
+        font-size: 30px;    
+        display: none;
+    }
+
+    .hidden_nav{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.89);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        z-index: 99999;
+        display: none;
+
+        a{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            transition: all 0.3s;
+            
+            &:hover{
+                transform: scale(1.2);
+                transition: all 0.3s;
+                letter-spacing: 3px;
+            }
+
+        }
+        .hide{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: #fff;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    .progress-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        // height: 5px;
+        // background: #ccc;
+      }
+      
+      .progress-bar {
+        height: 5px;
+        background: #04AA6D;
+        width: 0%;
+      }
+      .clock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+      }
+}
+header.background{
+    transition: all 0.5s;
+    height: 60px;
+    background-color: #fff;
+    // border-bottom: 4px solid #000;
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.496);
+}
+
+// @media(max-width: 1370px){
+//     header{
+//         width: 1366px;
+//     }
+// }
+
+@media(max-width: 900px){
+    .menu{
+        display: flex !important;
+    }
+    nav{
+        display: none !important;
+    }
+    .social{
+        display: none !important;
+    }
+}
+@media(max-width: 500px){
+    header{
+        padding: 20px !important;
+    }
+    .clock{
+        font-size: 11px !important;
+      }
+}

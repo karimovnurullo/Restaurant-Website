@@ -1,0 +1,265 @@
+.section_1 {
+    width: 100%;
+    // max-width: 1366px;
+    // margin: auto;
+    height: auto;
+    margin: auto;
+    padding-top: 100px;
+
+    .radius {
+        width: 90%;
+        height: 550px;
+        margin: auto;
+        // margin: auto;
+
+        display: flex;
+        // margin-top: -20px;
+
+        .left {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: #E7FAFE;
+            border-radius: 40px 0 0 40px;
+            padding: 50px;
+
+            .island {
+                height: 45px;
+                width: 156px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                // margin-top: 50px;
+                border-radius: 30px;
+
+                p {
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+
+            h1 {
+                font-size: 64px;
+                color: #000;
+                line-height: 70px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            .island_box {
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+
+                div {
+                    background: rgba(0, 0, 0, 0.05);
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            .flex_box {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        h3 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #000;
+                            margin-top: 10px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+
+                }
+
+                .view {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 60px;
+                    background-color: #000;
+                    border-radius: 16px;
+                    gap: 15px;
+
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .absolute {
+                position: absolute;
+                top: 50px;
+                right: -70px;
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0px 40px 40px 0px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .section_1 {
+
+
+        .left {
+            // padding: 30px !important;
+
+
+            .island {
+
+                p {
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+
+            h1 {
+                font-size: 44px !important;
+                line-height: 60px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                line-height: 25px !important;
+            }
+
+            .flex_box {
+
+                // display: flex !important;
+                // // flex-direction: column !important;
+                // gap: 30px !important;
+                .view {
+                    width: 170px !important;
+                    height: 50px !important;
+                    gap: 15px;
+
+                }
+
+            }
+
+            .absolute {
+                position: absolute;
+                top: 50px;
+                right: -70px;
+                width: 130px !important;
+                height: 130px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .section_1 {
+        height: 100% !important;
+
+        .radius {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            width: 90% !important;
+            height: 100% !important;
+
+            .left {
+                width: 100% !important;
+                height: 50% !important;
+                border-radius: 40px 40px 0 0 !important;
+
+                .absolute {
+                    display: none !important;
+                }
+            }
+
+            .right {
+                margin-bottom: 50px !important;
+                width: 100% !important;
+                height: 50% !important;
+
+                img {
+                    width: 100% !important;
+                    height: 50% !important;
+                    border-radius: 0 0 40px 40px !important;
+
+                }
+
+            }
+        }
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .island_box {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-area: 20px !important;
+    }
+    .radius{
+
+        .left {
+            padding: 20px !important;
+            height: 100vh !important;
+    
+            h1 {
+                font-size: 24px !important;
+                line-height: 40px !important;
+            }
+    
+            p {
+                font-size: 14px !important;
+                line-height: 25px !important;
+            }
+    
+            .flex_box {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+            }
+        }
+    }
+
+}

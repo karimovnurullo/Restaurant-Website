@@ -1,0 +1,127 @@
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .top{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            // text-align: left;
+
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                // margin-left: -280px;
+                display: flex;
+                justify-content: left;
+            }
+            p{
+                margin-top: 40px;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.6);
+                font-weight: 400;
+            }
+        }
+        .footer_nav{
+            display: flex;
+            gap: 50px;
+
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                color: #000;
+            }
+        }
+    }
+    hr{
+        width: 100%;
+        height: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 50px 0;
+    }
+    .flex_2{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 400px;
+        
+        p{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 400;
+
+            span{
+                color: #FF7967;
+                a{
+                    
+                    color: #FF7967;
+                }
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+}
+@media(max-width: 1000px){
+    footer{
+        .flex{
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 30px !important;
+        }
+        .flex_2{
+            margin: 0 !important;
+        }
+    }
+}
+@media(max-width: 700px){
+    footer{
+        padding: 40px !important;
+    }
+}
+@media(max-width: 600px){
+    footer{
+        padding: 20px !important;
+        .flex_2{
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 20px !important;
+            margin: auto !important;
+        }
+    }
+}
+@media(max-width: 600px){
+    footer{
+        .flex{
+            .footer_nav{
+                gap: 20px;
+                a{
+                    font-size: 14px !important;
+                }
+            }
+        }
+        .flex_2{
+            gap: 20px !important;
+            height: fit-content !important;
+
+            p{
+                font-size: 14px !important;
+            }
+            .links{
+                gap: 20px !important;
+            }
+        }
+    }
+}

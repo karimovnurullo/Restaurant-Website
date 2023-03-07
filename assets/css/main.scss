@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 30px 0 0 30px;
+    background-color: rgba(0, 128, 15, 0.633);
+}
+// .container{
+//     position: relative;
+//     width: 13665px;
+//     // margin: auto;
+// }
+
+    
+@import "./header";
+@import "./section_1";
+@import "./section_2";
+@import "./section_3";  
+@import "./section_4";
+@import "./section_5";
+@import "./section_6";
+@import "./section_7";
+@import "./footer";
